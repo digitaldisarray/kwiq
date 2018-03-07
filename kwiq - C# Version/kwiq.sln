@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kwiq", "kwiq\kwiq.csproj", "{06933E39-B66B-4AE6-B2BE-62A14ED52B51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06933E39-B66B-4AE6-B2BE-62A14ED52B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06933E39-B66B-4AE6-B2BE-62A14ED52B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06933E39-B66B-4AE6-B2BE-62A14ED52B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06933E39-B66B-4AE6-B2BE-62A14ED52B51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72A9D197-1DE3-4539-808C-B90BC9F20212}
+	EndGlobalSection
+EndGlobal

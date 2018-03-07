@@ -1,0 +1,7 @@
+D:\VisualStudioProjects\kwiq\kwiq\bin\Debug\kwiq.exe.config
+D:\VisualStudioProjects\kwiq\kwiq\bin\Debug\kwiq.exe
+D:\VisualStudioProjects\kwiq\kwiq\bin\Debug\kwiq.pdb
+D:\VisualStudioProjects\kwiq\kwiq\obj\Debug\kwiq.csprojResolveAssemblyReference.cache
+D:\VisualStudioProjects\kwiq\kwiq\obj\Debug\kwiq.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\kwiq\kwiq\obj\Debug\kwiq.exe
+D:\VisualStudioProjects\kwiq\kwiq\obj\Debug\kwiq.pdb
