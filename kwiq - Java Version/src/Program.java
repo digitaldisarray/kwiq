@@ -45,7 +45,11 @@ public class Program {
 
 	// Display help information.
 	private static void help() {
-		System.out.println("Command 1: Display help.\n" + "Command 3: \n" + "Command 4: ");
+		System.out.println("Command 1: Display help.\n"
+			+ "Command 2: A feature.\n"
+			+ "Command 3: A feature.\n"
+			+ "Command 4: A feature.\n"
+			+ "Command 4: Exit.");
 	}
 
 	// Prompt user to exit the program.
