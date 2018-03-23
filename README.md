@@ -2,7 +2,7 @@
 :rocket: A fast, lightweight, and terminal based menu framework.
 
 Todo:
- - Colors
+ - Better Colors
  - C++
  - C
 
