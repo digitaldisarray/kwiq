@@ -1,6 +1,5 @@
 # NOTICE
-I lost intrest in this a long time ago. Maybe it will eventually be complete.
-Just know that this is FAR from complete.
+I kinda picked up intrest in this again.
 
 # kwiq
 :rocket: A fast, lightweight, and terminal based menu framework.
