@@ -17,11 +17,12 @@ public class Terminal extends Thread {
 		this.prompt = prompt;
 	}
 
-	// TODO: Make one of these for every constructor that exists in the command class	
-	public void addCommand(String name, String syntax, ArrayList<Object> args) {
-		cmds.add(new Command(name, syntax, args));
+	// TODO: Make one of these for every constructor that exists in the command
+	// class
+	public void addCommand(String name, String description, String syntax, ArrayList<Object> args) {
+		cmds.add(new Command(name, description, syntax, args));
 	}
-	
+
 	public void addCommand(String name) {
 		cmds.add(new Command(name));
 	}
@@ -39,7 +40,7 @@ public class Terminal extends Thread {
 
 			System.out.print("============\n" + prompt);
 			input = in.next();
-			
+
 			System.out.println("You typed: " + input);
 		}
 	}

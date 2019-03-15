@@ -7,35 +7,56 @@ public class Command {
 	private String syntax;
 	private ArrayList<Object> args;
 
-	// TODO: I forgot the way to make these constructors not so janky
-
+	/**
+	 * Creates a command object with only a name.
+	 * 
+	 * Default Values Assigned:
+	 *  - Description: blank
+	 *  - Syntax: "No syntax specified"
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 */
 	public Command(String name) {
-		this.name = name;
-		this.description = "";
-		this.syntax = name + " <args>";
-		this.args = new ArrayList<>();
+		this(name, "", "No syntax specified.", new ArrayList<>());
 	}
 
-	// TODO: I forgot the way to make these constructors not so janky
-
-	public Command(String name, ArrayList<Object> args) {
-		this.name = name;
-		this.description = "";
-		this.syntax = name + " <args>";
-		this.args = args;
+	/**
+	 * Creates a command object with only a name and description.
+	 * 
+	 * Default Values Assigned:
+	 *  - Syntax: "No syntax specified"
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 */
+	public Command(String name, String description) {
+		this(name, description, "No syntax specified.", new ArrayList<>());
 	}
 
-	// TODO: I forgot the way to make these constructors not so janky
-
-	public Command(String name, String syntax, ArrayList<Object> args) {
-		this.name = name;
-		this.description = "";
-		this.syntax = syntax;
-		this.args = args;
+	/**
+	 * Creates a command object with only a name, description, and syntax.
+	 * 
+	 * Default Values Assigned:
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 * @param syntax - The commands usage/syntax. Typically includes an example command or two.
+	 */
+	public Command(String name, String description, String syntax) {
+		this(name, description, syntax, new ArrayList<>());
 	}
 
-	// TODO: I forgot the way to make these constructors not so janky
-
+	/**
+	 * Creates a command object with only a name, description, syntax, and argument types.
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 * @param syntax - The commands usage/syntax. Typically includes an example command or two.
+	 * @param args - An array list of the order, and object type the arguments should follow.
+	 */
 	public Command(String name, String description, String syntax, ArrayList<Object> args) {
 		this.name = name;
 		this.description = description;
@@ -50,7 +71,7 @@ public class Command {
 	public String getSyntax() {
 		return this.syntax;
 	}
-	
+
 	public String getDescription() {
 		return this.description;
 	}
