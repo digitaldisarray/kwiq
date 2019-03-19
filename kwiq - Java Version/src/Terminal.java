@@ -17,14 +17,58 @@ public class Terminal extends Thread {
 		this.prompt = prompt;
 	}
 
-	// TODO: Make one of these for every constructor that exists in the command
-	// class
+	/**
+	 * Adds a command to the command list with only a name, description, syntax, and argument types.
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 * @param syntax - The commands usage/syntax. Typically includes an example command or two.
+	 * @param args - An array list of the order, and object type the arguments should follow.
+	 */
 	public void addCommand(String name, String description, String syntax, ArrayList<Object> args) {
 		cmds.add(new Command(name, description, syntax, args));
 	}
+	
+	/**
+	 * Adds a command to the command list with only a name, description, and syntax.
+	 * 
+	 * Default Values Assigned:
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 * @param syntax - The commands usage/syntax. Typically includes an example command or two.
+	 */
+	public void addCommand(String name, String description, String syntax) {
+		cmds.add(new Command(name, description, syntax, new ArrayList<>()));
+	}
+	
+	/**
+	 * Adds a command to the command list with only a name and description.
+	 * 
+	 * Default Values Assigned:
+	 *  - Syntax: "No syntax specified"
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 * @param description - The description of what the command will do.
+	 */
+	public void addCommand(String name, String description) {
+		cmds.add(new Command(name, description, "No syntax specified.", new ArrayList<>()));
+	}
 
+	/**
+	 * Adds a command to the command list with only a name.
+	 * 
+	 * Default Values Assigned:
+	 *  - Description: blank
+	 *  - Syntax: "No syntax specified"
+	 *  - Args: Empty ArrayList of class: Object
+	 * 
+	 * @param name - The name of the command.
+	 */
 	public void addCommand(String name) {
-		cmds.add(new Command(name));
+		cmds.add(new Command(name, "", "No syntax specified.", new ArrayList<>()));
 	}
 
 	@Override
